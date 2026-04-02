@@ -153,3 +153,58 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+.hero {
+	padding: 2rem;
+	background: white;
+	border-radius: 12px;
+	box-shadow: var(--box-shadow);
+	margin-bottom: 2.5rem;
+}
+.eyebrow {
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	color: rgb(var(--gray));
+	font-weight: 700;
+}
+.cta-row {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+}
+.button {
+	display: inline-block;
+	padding: 0.7rem 1rem;
+	background: var(--accent);
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: 700;
+}
+.button:hover {
+	background: var(--accent-dark);
+	color: white;
+}
+.button-secondary {
+	background: rgb(var(--gray-light));
+	color: rgb(var(--gray-dark));
+}
+.button-secondary:hover {
+	background: rgb(var(--gray));
+	color: white;
+}
+.grid {
+	display: grid;
+	gap: 1rem;
+}
+.cards {
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.card {
+	background: white;
+	padding: 1.2rem;
+	border-radius: 12px;
+	border: 1px solid rgb(var(--gray-light));
+}
